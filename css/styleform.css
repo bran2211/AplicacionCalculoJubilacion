@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    background-color: #1a1c33; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Espacio para evitar que el contenido quede oculto bajo el header */
+}
+
+/* Estilos para el header */
+.main-header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #20242d; /* Color del header */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #6ff6fe; /* Color de texto */
+}
+
+.main-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Estilos para el formulario */
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #20242d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.info-text {
+    text-align: center;
+    color: #b0b0b0; /* Color suave para el texto informativo */
+    margin-bottom: 30px; /* Espacio adicional para separar del contenido */
+}
+
+.styled-form {
+    border: none; /* Eliminamos el borde alrededor del formulario */
+}
+
+.styled-form fieldset {
+    border: none; /* Eliminamos el borde de los fieldsets */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.styled-form legend {
+    color: #6ff6fe; /* Color de los títulos de sección */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Aumentamos el espacio entre los campos */
+}
+
+/* Nueva clase para alinear campos en una línea */
+.input-row-inline {
+    display: flex;
+    gap: 30px; /* Espacio entre los campos en una línea */
+    flex-wrap: nowrap; /* Evita que los campos se envuelvan */
+}
+
+.input-group {
+    flex: 1;
+    min-width: 220px; /* Tamaño mínimo de los campos */
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #fff; /* Color blanco para los labels */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c2f38; /* Color de fondo del input */
+    border: none; /* Sin borde */
+    border-radius: 4px;
+    color: #fff; /* Color del texto en los inputs */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra interior suave */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #3c434f; /* Color más claro al enfocar */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); /* Sombra interior más fuerte al enfocar */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6ff6fe; /* Color del botón */
+    color: #20242d; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Separación del botón respecto a los campos */
+}
+
+.submit-button:hover {
+    background-color: #4dc8d9; /* Color del botón al pasar el ratón */
+    transform: scale(1.05); /* Escala el botón al pasar el ratón */
+}
+
+.main-footer {
+    background-color: #20242d; /* Color del pie de página */
+    text-align: center;
+    padding: 10px;
+}
+

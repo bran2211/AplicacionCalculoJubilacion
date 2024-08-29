@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    background-color: #1a1c33; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la ventana */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #20242d; /* Color del header */
+    padding: 20px;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; /* Centramos el texto del header */
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #6ff6fe; /* Color de texto */
+}
+
+/* Estilos para el main */
+main {
+    flex: 1; /* Ocupa el espacio restante entre el header y el footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px; /* Espacio suficiente para evitar que el contenido quede oculto bajo el header */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+    margin-top: 60px; /* Espacio para el header */
+}
+
+/* Contenedor de resultados */
+.resultado-cuadro {
+    max-width: 800px; /* Ancho máximo del contenedor de resultados */
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 20px;
+    background-color: #20242d; /* Fondo del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+/* Estilos para los requisitos y respuestas */
+.resultado-cuadro p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.resultado-cuadro strong {
+    color: #fff; /* Requisitos en blanco */
+}
+
+.resultado-cuadro p {
+    color: #e9e1e1; /* Respuestas en un tono más suave */
+}
+
+
+/* Estilo de los encabezados */
+h2 {
+    margin-bottom: 1em;
+    color: #6ff6fe; /* Color de los encabezados */
+}
+
+/* Estilos para la tabla */
+.resultado-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.resultado-tabla th, .resultado-tabla td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: left;
+}
+
+.resultado-tabla th {
+    background-color: #2c2f38;
+    color: white; /* Color del texto de los encabezados de tabla */
+}
+
+.resultado-tabla tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo de las filas pares */
+}
+
+.resultado-tabla tr:nth-child(odd) {
+    background-color: white; /* Fondo de las filas impares */
+}
+
+.resultado-tabla td {
+    color: #333; /* Color del texto en las celdas de la tabla */
+}
+
+.resultado-tabla td:last-child {
+    text-align: right;
+}
+
+/* Estilos para el botón Nuevo formulario */
+.boton-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    margin-top: 20px; /* Espacio superior para separar del contenido */
+}
+
+.nuevo-boton {
+    padding: 10px 20px;
+    background-color: #6ff6fe; /* Color del botón */
+    color: #20242d; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.nuevo-boton:hover {
+    background-color: #5bb6d1; /* Color del botón al pasar el cursor */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #20242d; /* Color del pie de página */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Asegura que el footer esté en la parte inferior */
+}
+
+footer p {
+    margin: 0;
+}
